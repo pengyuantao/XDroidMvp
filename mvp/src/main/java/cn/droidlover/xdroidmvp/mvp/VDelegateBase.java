@@ -32,7 +32,7 @@ public class VDelegateBase implements VDelegate {
     }
 
     @Override
-    public void destory() {
+    public void destroy() {
 
     }
 

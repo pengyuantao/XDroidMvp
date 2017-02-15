@@ -112,7 +112,7 @@ public abstract class XFragment<P extends IPresent> extends RxFragment implement
         if (getP() != null) {
             getP().detachV();
         }
-        getvDelegate().destory();
+        getvDelegate().destroy();
 
         p = null;
         vDelegate = null;
@@ -129,8 +129,4 @@ public abstract class XFragment<P extends IPresent> extends RxFragment implement
         return 0;
     }
 
-    @Override
-    public void bindEvent() {
-
-    }
 }

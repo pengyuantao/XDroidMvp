@@ -33,6 +33,8 @@ public class MainActivity extends XActivity {
     XFragmentAdapter adapter;
 
 
+
+
     @Override
     public void initData(Bundle savedInstanceState) {
         setSupportActionBar(toolbar);
@@ -49,6 +51,11 @@ public class MainActivity extends XActivity {
         viewPager.setOffscreenPageLimit(3);
 
         tabLayout.setupWithViewPager(viewPager);
+    }
+
+    @Override
+    public void bindEvent() {
+
     }
 
     @Override

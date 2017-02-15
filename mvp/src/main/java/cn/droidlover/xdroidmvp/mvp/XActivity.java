@@ -101,7 +101,8 @@ public abstract class XActivity<P extends IPresent> extends RxAppCompatActivity 
         if (getP() != null) {
             getP().detachV();
         }
-        getvDelegate().destory();
+        getvDelegate().destroy();
+        unbinder.unbind();
         p = null;
         vDelegate = null;
     }
@@ -125,8 +126,5 @@ public abstract class XActivity<P extends IPresent> extends RxAppCompatActivity 
         return 0;
     }
 
-    @Override
-    public void bindEvent() {
 
-    }
 }

@@ -43,6 +43,11 @@ public class WebActivity extends XActivity {
 
 
     @Override
+    public void bindEvent() {
+
+    }
+
+    @Override
     public void initData(Bundle savedInstanceState) {
         url = getIntent().getStringExtra(PARAM_URL);
         desc = getIntent().getStringExtra(PARAM_DESC);

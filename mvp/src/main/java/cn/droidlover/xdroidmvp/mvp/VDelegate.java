@@ -11,7 +11,7 @@ public interface VDelegate {
 
     void pause();
 
-    void destory();
+    void destroy();
 
     void visible(boolean flag, View view);
     void gone(boolean flag, View view);

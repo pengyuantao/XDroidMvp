@@ -66,15 +66,15 @@ public abstract class XLazyFragment<P extends IPresent>
     }
 
     @Override
-    protected void onDestoryLazy() {
-        super.onDestoryLazy();
+    protected void onDestroyLazy() {
+        super.onDestroyLazy();
         if (useEventBus()) {
             BusProvider.getBus().unregister(this);
         }
         if (getP() != null) {
             getP().detachV();
         }
-        getvDelegate().destory();
+        getvDelegate().destroy();
 
         p = null;
         vDelegate = null;
